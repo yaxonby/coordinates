@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width">
+		<title>Coding Test</title>
+		<meta name="description" content="Coding Test">
+		<link rel="stylesheet" href="style.css"  type="text/css">
+	</head>
+	<body>
+		<section>
+			<article class="Task">
+				<div>List of cities:  </div>
+				<ul class="ulListCity">
+				</ul>
+			</article>
+			<br />
+
+			<article class="Task">
+				<div>
+					1) Return the name of the northernmost, easternmost, southernmost or
+					westernmost city from the list, as requested by the caller.
+					<br />
+					<button onclick="newCity.northCity()"> Northernmost city</button>
+					<button onclick="newCity.eastCity()"> Easternmost city</button>
+					<button onclick="newCity.southCity()">  Southernmost city</button>
+					<button onclick="newCity.westCity()"> Westernmost city</button>
+				</div>
+				<div class="taskResult1"> result </div>
+			</article>
+
+			<br />
+			<article class="Task">
+				2) Pass longitude and latitude as parameters, and return the name of the city
+				that is closest to that location.
+				<br />
+				Please enter data
+				latitudes:  <input id="inputLatitudes"  type="text" placeholder="90">
+				longitudes: <input id="inputLongitudes" type="text" placeholder="180">
+				<button onClick="inputValue()"> Enter </button>
+				<div class="taskResult2-1"> result </div>
+				<div class="taskResult2-2"> result </div>
+			</article>
+			<br />
+
+			<article class="Task">
+				3) Return a single string containing just the state abbreviations from the list
+				of cities, each separated by a space. The method should eliminate duplicate
+				states. The result string should not have leading or trailing spaces.
+				<br />
+				<button onClick="newCity.stateAbbreviations()"> See the result </button>
+				<div class="taskResult3"> result  </div>
+			</article>
+		</section>
+
+		<script src="index.js">  </script>
+	</body>
+</html>
